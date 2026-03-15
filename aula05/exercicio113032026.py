@@ -7,9 +7,12 @@
 
 #condições=> 1. O que se repete? notas, media, status V
 #  2. Quantas vezes? 10 vezes V
-#  3. O que muda? alunos e as notas
-#  4. O que guardar? 0 
-#  5. Quando para? depois do decimo aluno
+#  3. O que muda? alunos e as notas V
+#  4. O que guardar? 0, cada aluno e independente.V
+#  5. Quando para? depois do decimo aluno V
+
+# Ponto importante come;ar pela logica (if, elif, else) e 
+# Depois encaixar ele dentro do laco de repeticao.
 
 for i in range (1, 11):
     print(f"aluno {i}")
@@ -28,4 +31,3 @@ for i in range (1, 11):
     else:
         status= "Reprovado"
     print(f"media do aluno:{media}, condição:{status}")
-
