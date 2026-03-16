@@ -9,6 +9,15 @@
 # 3.6 O valor total (R$) recebido dos passageiros. 
 # 3.7 Calcular e escrever: a média do consumo em km/L e o lucro (líquido) do dia.
 
-#Variaveis => combustivel, odometro (inicio, fim), combustivel_gasto, valor_total, media_consumo e lucro_liq
+#Variaveis => combustivel, odometro (inicio, fim), combustivel_gasto, valor_total, media_consumo,lucro_liq, valor recebido
 
-combustivel= 6,15
+combustivel= 6.15
+odometro_inicio = float(input("Informe a marcação do odometro do inicio do dia (em KM):"))
+odometro_final = float(input("Informe a marcação do odometro do final do dia (em KM):"))
+combustivel_gasto = float(input("Informe a quantidade de litros de combustivel gastos:"))
+valor_recebido = float(input("Informe o valor total recebido pelos passageiros (em R$):"))
+
+km_percorridos = odometro_final - odometro_inicio #distancia percorrida
+media_consumo = km_percorridos / combustivel_gasto
+custo_combustivel = combustivel_gasto * combustivel
+lucro_liq = valor_recebido - custo_combustivel
