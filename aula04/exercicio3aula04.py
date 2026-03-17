@@ -21,3 +21,5 @@ km_percorridos = odometro_final - odometro_inicio #distancia percorrida
 media_consumo = km_percorridos / combustivel_gasto
 custo_combustivel = combustivel_gasto * combustivel
 lucro_liq = valor_recebido - custo_combustivel
+
+print(lucro_liq)
